@@ -16,10 +16,10 @@ let r=0;
     else if (src[i]===true){
       return true }
     else{
-      r = cb(src[i])
+     return r = cb(src[i])
     }
   }
-    return r
+return r
 }
 
 // ourceArray = [1,2,3]
