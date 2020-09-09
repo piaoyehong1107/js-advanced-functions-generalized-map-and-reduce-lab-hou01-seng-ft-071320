@@ -19,7 +19,6 @@ let r=0;
      return r = cb(src[i])
     }
   }
-return r
 }
 
 // ourceArray = [1,2,3]
