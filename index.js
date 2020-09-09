@@ -16,7 +16,7 @@ let r=0;
     else if (src[i]===true){
       return true }
     else{
-     r = cb(src[i])
+     r = cb(src[i],starting=0)
     }
     return r
   }
