@@ -7,12 +7,23 @@ function map(src, cb) {
 }
 
 function reduce(src, cb, starting){
-  let r = (!!starting) ? starting : src[0]
-  let i = (!!starting) ? 0 : 1
 
-  for (; i < src.length; i++) {
-    r = cb(src[i], r)
+let i=0;
+let r=0;
+  for (i=0; i< src.length; i++) {
+    if( src[i] === false){
+      return false }
+    else if (src[i]===true){
+      return true }
+    else{
+      r = cb(src[i])
+    }
   }
-
-  return r;
+    return r
 }
+
+// ourceArray = [1,2,3]
+//       startingPoint = 100
+//       expect(reduce(sourceArray, function(e, memo){return e + memo}, startingPoint)).to.equal(106)
+
+
