@@ -18,6 +18,7 @@ let r=0;
     else{
      r = cb(src[i])
     }
+    return r
   }
 }
 
